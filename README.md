@@ -166,10 +166,16 @@ CORS_ORIGINS=http://localhost:5173
 
 ---
 
+## 💰 Commercial Licensing
+
+If you're interested in using this project for commercial purposes, please contact me to discuss licensing options.
+
+
 ## 📫 Contact
 
 - GitHub: [@Doread-Dev](https://github.com/Doread-Dev)
 - LinkedIn: [linkedin.com/in/haydara-al-bisomy](https://www.linkedin.com/in/haydara-al-bisomy)
 - Email: haydara.bisomy@gmail.com
+
 
 > “A fair system saves more than just resources — it restores trust.”
