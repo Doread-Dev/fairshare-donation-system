@@ -139,7 +139,6 @@ A back-end-driven platform designed to optimize the distribution of food donatio
 
 ```bash
 git clone https://github.com/your-username/fairshare-donation-system
-cd fairshare-donation-system
 npm install
 npm run dev
 ```
