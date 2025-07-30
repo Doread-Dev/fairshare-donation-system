@@ -1,0 +1,11 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  background-image: radial-gradient(#e6e6e6 1.3px, transparent 1px);
+  background-size: 20px 20px;
+  z-index: -20;
+}
+
+.placeholderColor::placeholder {
+  color: #9CA3AF; 
+} 

@@ -1,0 +1,47 @@
+.summaryCard {
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.summaryCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.alertBadge {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.6; }
+    100% { opacity: 1; }
+}
+
+.inventoryItem:hover {
+    background-color: #f9f9f9;
+}
+
+.statusNormal {
+    background-color: #f0fdf4;
+    color: #166534;
+}
+
+.statusShortage {
+    background-color: #fef2f2;
+    color: #b91c1c;
+}
+
+.statusSurplus {
+    background-color: #eff6ff;
+    color: #1d4ed8;
+}
+
+.filterBtn {
+    transition: all 0.3s ease;
+}
+
+.filterBtn.active {
+    background-color: #5A7D57;
+    color: white;
+} 

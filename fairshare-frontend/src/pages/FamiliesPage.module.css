@@ -1,0 +1,143 @@
+.summaryCard {
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.summaryCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.familyRow:hover {
+    background-color: #f9fafb;
+}
+
+.actionBtn {
+    transition: all 0.2s ease;
+}
+
+.actionBtn:hover {
+    transform: scale(1.1);
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.modalOverlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modalContainer {
+    background-color: #FAFAFA;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 500px;
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.modalOverlay.active .modalContainer {
+    transform: translateY(0);
+}
+
+.modalHeader {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.modalFooter {
+    border-top: 1px solid #e5e7eb;
+}
+
+.inputField {
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.inputField:focus {
+    border-color: #5A7D57;
+    box-shadow: 0 0 0 3px rgba(90, 125, 87, 0.1);
+}
+
+.numberStepper {
+    display: flex;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.stepperBtn {
+    background-color: #f3f4f6;
+    border: none;
+    width: 40px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.stepperBtn:hover {
+    background-color: #e5e7eb;
+}
+
+.stepperInput {
+    border: none;
+    width: 60px;
+    text-align: center;
+    font-size: 1rem;
+    outline: none;
+}
+
+.locationDropdown {
+    position: relative;
+}
+
+.dropdownList {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 10;
+    display: none;
+}
+
+.dropdownList.visible {
+    display: block;
+}
+
+.dropdownItem {
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.dropdownItem:hover {
+    background-color: #f3f4f6;
+}
+
+.accordionContent {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.hiddenRow {
+    display: none;
+} 

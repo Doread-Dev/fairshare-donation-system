@@ -1,0 +1,41 @@
+.formCard {
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.btnPrimary {
+    background-color: #5A7D57;
+    transition: all 0.3s ease;
+}
+
+.btnPrimary:hover {
+    background-color: #4a6c46;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(90, 125, 87, 0.3);
+}
+
+.unitSelector {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 1px solid #e5e7eb;
+}
+
+.quantityInput {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.recentDonations {
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.summaryCard {
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.summaryCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+} 

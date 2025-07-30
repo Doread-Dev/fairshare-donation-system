@@ -1,0 +1,91 @@
+.settingsCard {
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.settingsCard:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+.switch input:checked + .slider {
+    background-color: #5a7d57;
+}
+
+.switch input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.editableRow input {
+    border: 1px solid #e2e8f0;
+    padding: 8px 12px;
+    border-radius: 8px;
+    width: 100%;
+    transition: border 0.3s;
+}
+
+.editableRow input:focus {
+    outline: none;
+    border-color: #5a7d57;
+    box-shadow: 0 0 0 3px rgba(90, 125, 87, 0.1);
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modalContainer {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 500px;
+    padding: 1.5rem;
+} 
